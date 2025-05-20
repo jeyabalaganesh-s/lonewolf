@@ -16,7 +16,7 @@
                 <div class="p-4 bg-dark rounded">
                     <h3>Our Mission</h3>
                     <p>
-                        At Lone Wolf, our mission is to empower individuals to express themselves through our 
+                        At Lone wolf, our mission is to empower individuals to express themselves through our 
                         exclusive clothing collections, blending style with comfort.
                     </p>
                 </div>
