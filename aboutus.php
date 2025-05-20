@@ -45,7 +45,7 @@
             <div class="col-md-4">
                 <div class="p-4 bg-dark rounded text-center">
                     <h5>Innovation</h5>
-                    <p>Creativity and innovation drive our unique designs.</p>
+                    <p>Creativity and Innovation drive our unique designs.</p>
                 </div>
             </div>
             <div class="col-md-4">
