@@ -1,14 +1,17 @@
 <?php
-$servername = getenv('DB_HOST');
+$host     = getenv('DB_HOST');
+$port     = getenv('DB_PORT') ?: '5432'; // default PostgreSQL port
+$dbname   = getenv('DB_NAME');
 $username = getenv('DB_USER');
 $password = getenv('DB_PASS');
-$dbname   = getenv('DB_NAME');
-
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 try {
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-} catch (mysqli_sql_exception $e) {
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
+    $pdo = new PDO($dsn, $username, $password, [
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+    ]);
+    // Connected successfully
+} catch (PDOException $e) {
     die("Database connection failed: " . $e->getMessage());
 }
 ?>
