@@ -1,6 +1,6 @@
 <?php 
 include('header.php'); 
-include('db_connect.php'); // Include database connection
+// Include database connection
 ?>
 
 <!-- Hero Section -->

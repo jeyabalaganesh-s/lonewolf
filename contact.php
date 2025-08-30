@@ -1,6 +1,6 @@
 <?php 
 include ('header.php'); 
-include ('db_connect.php'); // Include the database connection
+ // Include the database connection
 ?>
 <font color="black">
 <div class="container my-5 text-white">
